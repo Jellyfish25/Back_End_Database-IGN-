@@ -58,7 +58,7 @@ sanitize_database()
 class QueryEngine():
     # orders the list by descending or ascending value
     def __order_by__(self, executeString):
-        print("Do you want to sort the query (y/n)?")
+        print("Do you want to sort the rows (y/n)?")
         currentInput = input()
         if currentInput == "y":
             # take user input and then select a category
@@ -104,7 +104,7 @@ class QueryEngine():
 
     # limits the range of the search query
     def __limit_range__(self, executeString):
-        print("Do you want to limit the range? (y/n)")
+        print("Do you want to limit the row's range? (y/n)")
         userAnswer = input()
         if userAnswer == "y":
             print("what should the limit be?")
@@ -182,7 +182,7 @@ class QueryEngine():
 
     # gets a specific query
     def get_specific_query(self):
-        print("Please select a query to search in (1-17):\n" +
+        print("Please select a column to search in (1-17):\n" +
               "1. id\n" +
               "2. media type\n" +
               "3. name\n" +
