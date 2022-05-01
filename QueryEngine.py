@@ -79,7 +79,7 @@ class QueryEngine():
                   "14. published by\n" +
                   "15. franchises\n" +
                   "16. regions\n" +
-                  "17. cancel\n")
+                  "17. cancel")
             currentInput = input()
             while not currentInput.isnumeric():
                 print("Error, input is not a number (1-17). Please Enter a digit in the range (1-17):")
@@ -137,7 +137,7 @@ class QueryEngine():
               "14. published by\n" +
               "15. franchises\n" +
               "16. regions\n" +
-              "17. done\n")
+              "17. done")
 
         queryDisplay = input()
         while not queryDisplay.isnumeric():
@@ -199,7 +199,7 @@ class QueryEngine():
               "14. published by\n" +
               "15. franchises\n" +
               "16. regions\n" +
-              "17. cancel\n")
+              "17. cancel")
         userInput = input()
         if not userInput.isnumeric():
             print("Error, invalid input: " + userInput)
